@@ -31,7 +31,7 @@ mobileNo.addEventListener('input',function(){
 const password = document.querySelector('#password')
 const textError = document.querySelector('.text-error')
 password.addEventListener('input',function(){
-    let passwordRegex = RegExp('[0-9 a-z A-Z]{8,}')
+    let passwordRegex = RegExp('(?=.*\\d)(?=.*[A-Z])[A-Za-z0-9]{7,}(?=.*[$@!%*?=+-_&]{1})')
     if(passwordRegex.test(password.value))
     textError.textContent = "";
     else textError.textContent = "Password is in Incorrect format"
