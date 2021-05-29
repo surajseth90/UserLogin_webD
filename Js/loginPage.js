@@ -17,3 +17,13 @@ email.addEventListener('input',function(){
     else textError.textContent = "Email is Incorrect"
 
 });
+
+const mobileNo = document.querySelector('#mobileNo')
+const textError = document.querySelector('.text-error')
+mobileNo.addEventListener('input',function(){
+    let emailRegex = RegExp('^[1-9]{2}\\s[1-9]{1}[0-9]{9}$')
+    if(emailRegex.test(mobileNo.value))
+    textError.textContent = "";
+    else textError.textContent = "Mobile number is Incorrect"
+
+});
