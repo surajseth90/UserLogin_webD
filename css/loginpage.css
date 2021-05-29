@@ -22,12 +22,28 @@ form{
 }
 div{
     margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
 }
 input{
-    margin-left: 5px;
-    width: 200px;
+    flex: auto;
+    
 }
+
+
 label{
     font-size: larger;
     color:rgb(45, 136, 196) ;
+    text-align: right;
+    margin-right: 4%;
+    width: 30%;
+}
+label,input{
+    line-height: 1.5;
+}
+.button{
+    width: 30%;
+    margin-left: 3.5em;
+
 }
