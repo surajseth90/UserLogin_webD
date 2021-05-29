@@ -27,3 +27,13 @@ mobileNo.addEventListener('input',function(){
     else textError.textContent = "Mobile number is Incorrect"
 
 });
+
+const password = document.querySelector('#password')
+const textError = document.querySelector('.text-error')
+password.addEventListener('input',function(){
+    let passwordRegex = RegExp('[0-9 a-z A-Z]{8,}')
+    if(passwordRegex.test(password.value))
+    textError.textContent = "";
+    else textError.textContent = "Password is in Incorrect format"
+
+});
